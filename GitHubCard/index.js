@@ -1,8 +1,12 @@
+
 /* Step 1: using axios, send a GET request to the following URL 
            (replacing the palceholder with your Github name):
            https://api.github.com/users/<your name>
 */
-
+axios.get('https://api.github.com/users/developer3027')
+  .then(response => {
+    console.log(response);
+    });
 /* Step 2: Inspect and study the data coming back, this is YOUR 
    github info! You will need to understand the structure of this 
    data in order to use it to build your component function 
@@ -27,7 +31,8 @@
 const followersArray = [];
 
 /* Step 3: Create a function that accepts a single object as its only argument,
-          Using DOM methods and properties, create a component that will return the following DOM element:
+          Using DOM methods and properties, create a component that will return the following DOM 
+          element:
 
 <div class="card">
   <img src={image url of user} />
@@ -42,9 +47,14 @@ const followersArray = [];
     <p>Following: {users following count}</p>
     <p>Bio: {users bio}</p>
   </div>
-</div>
-
+</div> 
 */
+function profileCard(object){
+
+}
+
+
+
 
 /* List of LS Instructors Github username's: 
   tetondan
